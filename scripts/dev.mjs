@@ -72,7 +72,7 @@ function launch(name, executable, args, cwd) {
 process.once("SIGINT", () => stop());
 process.once("SIGTERM", () => stop());
 console.log("NeuroLens local workspace: http://127.0.0.1:3000");
-console.log("API documentation: http://127.0.0.1:8010/docs");
+console.log("API health: http://127.0.0.1:8010/api/health");
 console.log("Research only. Press Ctrl+C to stop both services.");
 launch("api", python, ["-m", "uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8010"], backend);
 launch("web", process.execPath, [next, production ? "start" : "dev", "--hostname", "127.0.0.1", "--port", "3000"], root);
