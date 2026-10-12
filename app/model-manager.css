@@ -1,0 +1,398 @@
+.model-status-control,
+.model-delete-confirm {
+  min-inline-size: 0;
+  margin: 0;
+  border: 0;
+}
+.model-status-control {
+  padding: 0;
+}
+.model-status-control {
+  position: relative;
+  flex-shrink: 0;
+}
+.model-status-trigger {
+  min-height: 36px;
+  font-size: 12px;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+.model-status-trigger:hover,
+.model-status-trigger:focus-visible {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 3px #7854df12;
+}
+.model-status-trigger > svg {
+  color: var(--violet);
+}
+.model-status-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 60;
+  width: min(360px, calc(100vw - 24px));
+  max-height: calc(100dvh - 96px);
+  overflow: auto;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 12px 40px #20283c1a;
+}
+.model-status-control:has(.model-status-popover)::after {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 60;
+  width: min(360px, calc(100vw - 24px));
+  height: 11px;
+  content: "";
+}
+.model-status-popover > .button {
+  margin-top: 12px;
+  font-size: 13px;
+}
+.model-detail-grid {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px 16px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.model-detail-grid dt {
+  color: var(--muted);
+}
+.model-detail-grid dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.model-class-order {
+  display: grid;
+  gap: 2px;
+}
+.model-detail-empty {
+  padding: 8px 0;
+  color: var(--muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.model-detail-error {
+  margin-top: 14px;
+  color: #b34b52;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.model-manager-dialog {
+  width: min(600px, calc(100vw - 24px));
+  min-width: min(320px, calc(100vw - 24px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 20px 80px #0c142933;
+}
+.model-manager-dialog::backdrop {
+  background: #0c142970;
+  backdrop-filter: blur(3px);
+}
+.model-manager-heading,
+.model-section-heading,
+.model-profile-heading,
+.model-profile-actions,
+.model-file-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.model-manager-heading,
+.model-section-heading,
+.model-profile-heading {
+  justify-content: space-between;
+}
+.model-manager-heading h2 {
+  font-size: 19px;
+}
+.model-manager-heading > .icon-button {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.model-manager-section {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+.model-manager-section + .model-manager-section {
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.model-manager-section h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.model-manager-dialog .button {
+  min-height: 38px;
+  gap: 7px;
+  font-size: 13px;
+}
+.model-catalog {
+  display: grid;
+  gap: 12px;
+}
+.model-profile-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.model-profile-card.is-active {
+  border-color: #d8ccef;
+  background: #fcfaff;
+}
+.model-profile-heading {
+  align-items: flex-start;
+}
+.model-profile-heading h4 {
+  min-width: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.model-active-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: var(--violet-pale);
+  color: var(--violet-dark);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.model-profile-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 12px;
+  color: #687187;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.model-profile-details {
+  margin-top: 12px;
+}
+.model-profile-details > summary,
+.model-selected-files > summary {
+  width: fit-content;
+  color: var(--violet-dark);
+  font-size: 13px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.model-profile-details[open] > summary {
+  margin-bottom: 16px;
+}
+.model-profile-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.model-delete-button {
+  color: #b34b52;
+}
+.model-delete-confirm {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.model-delete-confirm > strong {
+  font-weight: 500;
+}
+.model-upload-form fieldset {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.model-form-field {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-size: 13px;
+}
+.model-form-field > span {
+  color: #687187;
+}
+.model-form-field input,
+.model-form-field select {
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid #dfe3ec;
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+}
+.model-form-field input:focus,
+.model-form-field select:focus {
+  border-color: var(--violet);
+  outline: 2px solid var(--violet-pale);
+  outline-offset: 1px;
+}
+.model-form-field input:disabled,
+.model-form-field select:disabled {
+  opacity: 0.65;
+}
+.model-file-controls {
+  flex-wrap: wrap;
+}
+.model-file-controls > .button {
+  flex: 1;
+}
+.model-selected-files ul {
+  display: grid;
+  gap: 8px;
+  max-height: 180px;
+  overflow: auto;
+  margin: 12px 0 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  list-style: none;
+  background: var(--canvas);
+  font-size: 13px;
+}
+.model-selected-files li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.model-selected-files li > span:first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.model-selected-files li > span:last-child {
+  flex-shrink: 0;
+  color: var(--muted);
+}
+.model-output-order {
+  display: grid;
+  gap: 12px;
+}
+.model-activate-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.model-activate-upload input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--violet);
+}
+.model-upload-submit {
+  justify-self: end;
+}
+.model-manager-feedback {
+  position: sticky;
+  bottom: -20px;
+  display: grid;
+  gap: 12px;
+  background: var(--surface);
+}
+.model-manager-feedback:has(> *) {
+  margin-top: 16px;
+  padding: 12px 0;
+}
+.model-manager-status,
+.model-manager-success,
+.model-manager-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.model-manager-status {
+  color: var(--violet-dark);
+}
+.model-manager-success {
+  color: #168672;
+}
+.model-manager-error {
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #f0d5d8;
+  border-radius: 8px;
+  background: #fff5f5;
+  color: #ad4550;
+}
+.model-manager-error > span {
+  flex: 1;
+  min-width: 0;
+}
+.model-manager-error > .icon-button,
+.model-manager-status > svg,
+.model-manager-success > svg {
+  flex-shrink: 0;
+}
+.model-manager-error > .icon-button {
+  width: 28px;
+  height: 28px;
+}
+.model-manager-dialog :where(summary, h3):focus-visible,
+.model-status-control :where(button):focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+}
+@media (max-width: 420px) {
+  .model-manager-dialog {
+    padding: 16px;
+  }
+  .model-profile-card {
+    padding: 12px;
+  }
+  .model-form-field {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+  .model-profile-heading {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .model-manager-feedback {
+    bottom: -16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .model-status-trigger {
+    transition: none;
+  }
+}

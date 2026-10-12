@@ -1,0 +1,32 @@
+{
+  "model_id": "Hemgg/brain-tumor-classification",
+  "revision": "2413c5fef4b2184b22493198a46a8e622a16c104",
+  "architecture": "ViT-Base / ViTForImageClassification",
+  "architecture_name": "ViT-Base",
+  "model_class": "ViTForImageClassification",
+  "model_type": "vit",
+  "license": "Apache-2.0",
+  "source_url": "https://huggingface.co/Hemgg/brain-tumor-classification",
+  "reported_accuracy": 0.9758,
+  "parameters": 85801732,
+  "input_size": 224,
+  "id2label": { "0": "glioma", "1": "meningioma", "2": "notumor", "3": "pituitary" },
+  "output_labels": ["Glioma", "Meningioma", "No Tumor", "Pituitary"],
+  "weight_file": "model.safetensors",
+  "weight_size": 343230128,
+  "weight_sha256": "51d06d0a5fc79184da94f8badd53f513dda7f8f5ae8d9d9a53aa55d9bd87481b",
+  "sha256": {
+    "config.json": "356e6ad3efb8ce545ca8b3c2f230d284a89a48c18a1416d801753114622276f7",
+    "preprocessor_config.json": "a34861a24e781942424ad790b82bc99348404a2e64ea882de88c40905851698d",
+    "model.safetensors": "51d06d0a5fc79184da94f8badd53f513dda7f8f5ae8d9d9a53aa55d9bd87481b"
+  },
+  "preprocessing_summary": "应用 EXIF 方向后转为 RGB；官方双线性缩放至 224×224；像素除以 255；均值与标准差均为 [0.5, 0.5, 0.5]。",
+  "limitations": [
+    "Research and education only; not approved or validated for clinical diagnosis.",
+    "Accuracy is author-reported, not independently reproduced on an external patient-level cohort.",
+    "Training dataset provenance and patient-level separation are insufficiently documented.",
+    "Single 2D brain MRI raster slices only. Not a CT, DICOM-volume, segmentation or general image model.",
+    "Softmax scores are uncalibrated model scores, not clinical diagnostic probabilities.",
+    "The40 public example comparison is small and may overlap source training data; it is not clinical validation."
+  ]
+}

@@ -1,0 +1,23 @@
+NeuroLens third-party assets
+
+Model: Hemgg/brain-tumor-classification
+Author: Hemgg
+Source: https://huggingface.co/Hemgg/brain-tumor-classification
+Revision: 2413c5fef4b2184b22493198a46a8e622a16c104
+License declared by publisher: Apache License 2.0 (backend/model-license.txt).
+The model weights are unmodified. ViT-Base is the Google foundation architecture.
+No affiliation with or endorsement by Google, Hugging Face or the model author is implied.
+
+Public MRI example images: Brain Tumor MRI Dataset
+Original curator: Masoud Nickparvar
+Mirror uploader: BJyotibrat
+Source: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+Mirror: https://huggingface.co/datasets/BJyotibrat/Masoud-Nickparvar-Brain-Tumor-MRI-Dataset
+License declared by dataset publisher: Creative Commons Attribution 4.0 International.
+License: https://creativecommons.org/licenses/by/4.0/
+Four JPEG images are copied without image modification and renamed for local demonstration.
+Original filenames and dataset revision are retained in public/samples/attribution.json.
+
+Author-reported evaluation metrics are separated from the recorded small public-sample reproduction results.
+The example images are not clinical validation and may overlap the model's source datasets.
+NeuroLens is a research and educational tool, not a medical device or a diagnostic service.

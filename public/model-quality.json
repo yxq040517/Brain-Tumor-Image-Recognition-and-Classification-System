@@ -1,0 +1,349 @@
+{
+  "evaluated_at": "2026-10-10T03:07:58.992245+00:00",
+  "model_id": "Hemgg/brain-tumor-classification",
+  "revision": "2413c5fef4b2184b22493198a46a8e622a16c104",
+  "dataset": "BJyotibrat/Masoud-Nickparvar-Brain-Tumor-MRI-Dataset",
+  "dataset_revision": "7fd75bb9f391c337eab8fab1ffdb5821e7223b23",
+  "dataset_source": "https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset",
+  "comparisons": [
+    {
+      "model_id": "prithivMLmods/BrainTumor-Classification-Mini",
+      "revision": "5a5e360e43dc41cd21fe58ce37a74e7e5c7b11bd",
+      "matches": 17,
+      "total": 20
+    },
+    {
+      "model_id": "Devarshi/Brain_Tumor_Classification",
+      "revision": "d516237148d0f06829fe016fe00c3b33426654a9",
+      "matches": 14,
+      "total": 20
+    },
+    {
+      "model_id": "basmazouaoui/vit-brain-tumor-classifier",
+      "revision": "f4af3e36ec81f1b8ed8c07bfb8ef6ce6e72a9e21",
+      "matches": 17,
+      "total": 20
+    },
+    {
+      "model_id": "Hemgg/brain-tumor-classification",
+      "revision": "2413c5fef4b2184b22493198a46a8e622a16c104",
+      "matches": 19,
+      "total": 20
+    }
+  ],
+  "selection": {
+    "matches": 19,
+    "total": 20
+  },
+  "additional": {
+    "matches": 19,
+    "total": 20
+  },
+  "matches": 38,
+  "total": 40,
+  "by_class": [
+    {
+      "label": "Glioma",
+      "matches": 9,
+      "total": 10
+    },
+    {
+      "label": "Meningioma",
+      "matches": 9,
+      "total": 10
+    },
+    {
+      "label": "No Tumor",
+      "matches": 10,
+      "total": 10
+    },
+    {
+      "label": "Pituitary",
+      "matches": 10,
+      "total": 10
+    }
+  ],
+  "samples": [
+    {
+      "source": "Testing/glioma/Te-gl_1.jpg",
+      "sha256": "a629aadd24c31daa08d9e79dce6c1dfcfa77ac95775b4683ec29663c61cbf9dd",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.8548499941825867
+    },
+    {
+      "source": "Testing/glioma/Te-gl_10.jpg",
+      "sha256": "5a743e10f894f426ba66ad637f38cd9246dae2ab6c5ad688316df12d45c0c5fc",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.9786471128463745
+    },
+    {
+      "source": "Testing/glioma/Te-gl_100.jpg",
+      "sha256": "0090827701d28f35c51a3f54f7eea25d866d86909fa491aec8a12fb51c56eeb5",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.9781330823898315
+    },
+    {
+      "source": "Testing/glioma/Te-gl_101.jpg",
+      "sha256": "9cd44bae45ad9ac2e91fefe9e9b4262e3285d28dc5237ea0b6f948991cf0e50c",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.9752970337867737
+    },
+    {
+      "source": "Testing/glioma/Te-gl_102.jpg",
+      "sha256": "4813552c8ef708ff035ae325cc5c6086e3f33275677e785d7d66c6f36e94b63a",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.9709994792938232
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_1.jpg",
+      "sha256": "19119b197100eb343eef9eb1899e80a111d35b63e51060c53967a54d3bfacfb8",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9757039546966553
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_10.jpg",
+      "sha256": "32731608a68560799cfe317e31dd84f6392c2f74df4748d8b680a535b348645d",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9679164886474609
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_100.jpg",
+      "sha256": "37530c613f63863babf9b3a728adc4f9c30e20bafaa4f2434a87de241923d892",
+      "expected": "Meningioma",
+      "predicted": "Glioma",
+      "score": 0.545087993144989
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_101.jpg",
+      "sha256": "1c51a1110caf7112f7bf084401e96112cef04ac6f20cfa2db12e6cbc11d924dd",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9604890942573547
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_102.jpg",
+      "sha256": "a929c878a157ede326e77ceea993dec51a4b09d2b287bf5e38d27c8906fe6b06",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9721013903617859
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_1.jpg",
+      "sha256": "79c20f70982dc8182457e7a5b5de051b0da59bc0277d27acefc06f7079531e2f",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9760161638259888
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_10.jpg",
+      "sha256": "9abb8d446e246cd53406031a122ad4730c1271d1c797bcf5037f1eb49cf95451",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9768996238708496
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_100.jpg",
+      "sha256": "111ae2cdb87f885332e54129f817ece8281ec023acfebed09e9cb0c239618b0b",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9757816791534424
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_101.jpg",
+      "sha256": "734b7a652fc0b92bfb7577176819feef5c8480ca5da3220f6d1c8e14ce614650",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9767549633979797
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_102.jpg",
+      "sha256": "aaf8e94255f24fe669ebc60638ac04d0917a49f08b08e0951b1071439de28235",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9738232493400574
+    },
+    {
+      "source": "Testing/notumor/Te-no_1.jpg",
+      "sha256": "dc8a25950f072b9830140f60f08958ea8bea1716b96d5f8c7b09017bd4ad67e7",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9792357087135315
+    },
+    {
+      "source": "Testing/notumor/Te-no_10.jpg",
+      "sha256": "24886192c0b8853b52660fe46f93f24fb12d3fe2b5a8cfa78d2f8d3e0102dd23",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9793755412101746
+    },
+    {
+      "source": "Testing/notumor/Te-no_100.jpg",
+      "sha256": "c62ea2526aa74964a12d7faf2a4446e3adc01f2429c0a2439deb8de115447d7f",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9793018102645874
+    },
+    {
+      "source": "Testing/notumor/Te-no_101.jpg",
+      "sha256": "11d37b7c3a723327a2e7414f575e9de4d2b7a03fdbb1a0d42e37615e73a3e404",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9785933494567871
+    },
+    {
+      "source": "Testing/notumor/Te-no_102.jpg",
+      "sha256": "7d01bbb2636442ded3fb98c6419e9afcdf9437d1b29c41dada9a693eafa185a4",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9789724946022034
+    },
+    {
+      "source": "Testing/glioma/Te-gl_103.jpg",
+      "sha256": "05d9770d85b24d6e950c49f0ece27798b336232538186efc84ac0e86f79c99b1",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.9288468360900879
+    },
+    {
+      "source": "Testing/glioma/Te-gl_104.jpg",
+      "sha256": "7a25c9ff1ef14561ea1cd8c1cc7597ae2d9210b42f2fe1ac5a289e236f3bfcd1",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.9700573682785034
+    },
+    {
+      "source": "Testing/glioma/Te-gl_105.jpg",
+      "sha256": "22de11b9145b5d2af3f15728c9fb2bb4840859850344c0ee6850dbd520c61236",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.978148341178894
+    },
+    {
+      "source": "Testing/glioma/Te-gl_106.jpg",
+      "sha256": "d1edf0a4de17ef2c9acaa591a7fa8ced3f7ecc801d970c523b4dd3c5aeb16353",
+      "expected": "Glioma",
+      "predicted": "Meningioma",
+      "score": 0.9654216766357422
+    },
+    {
+      "source": "Testing/glioma/Te-gl_107.jpg",
+      "sha256": "40f162fc8253619b9138061739dbaf8e4fdaa5a5390fccb0765b40f131f360e8",
+      "expected": "Glioma",
+      "predicted": "Glioma",
+      "score": 0.9783671498298645
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_103.jpg",
+      "sha256": "c8f3aa0429df2a19db59a5fc1c56d888b65804f491b64f9df22e04a4c2ed0b24",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9759106636047363
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_11.jpg",
+      "sha256": "d8b43953ead6d6c9ac08b831a87f4db63d060f53ceeacb637c2646c08099746c",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9741325378417969
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_12.jpg",
+      "sha256": "6455527badfcd9880d3f0e9bf9f5973872b064d3b0e4a4d5c3b1f67423970408",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9747079014778137
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_13.jpg",
+      "sha256": "60efc97e1d2c65cdb3a49f1f2d9a6493eb4af0c8d9979347e81c0af91d6b131b",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.9751835465431213
+    },
+    {
+      "source": "Testing/meningioma/Te-aug-me_14.jpg",
+      "sha256": "b0a10ba2593af992f30c613f998fba0f8e9c0b24250f431869339c05b19ac04a",
+      "expected": "Meningioma",
+      "predicted": "Meningioma",
+      "score": 0.8730581402778625
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_103.jpg",
+      "sha256": "18cd475b7043674970059e2f51a974cf3631479be10c3559517b3f0642d7aa2b",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9691212773323059
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_104.jpg",
+      "sha256": "7c71d5f40679c14b78d06b381e72550ac5cf21fd64c96464db8a5559e4aa3841",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9768590331077576
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_105.jpg",
+      "sha256": "36bd580cda28b5090d359972d2272400ed50fdc74ded57a5c878a4f87ca7a209",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9753469228744507
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_106.jpg",
+      "sha256": "c6120ed0450e4b36cb5b5918059b0b993b3f481a0729bd4b042f1cddbfd0eb98",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9765903353691101
+    },
+    {
+      "source": "Testing/pituitary/Te-pi_107.jpg",
+      "sha256": "aec78f10f9c0607aba81f64cf396ea10134dd94a8cbc75ef510a4070339e8242",
+      "expected": "Pituitary",
+      "predicted": "Pituitary",
+      "score": 0.9763374924659729
+    },
+    {
+      "source": "Testing/notumor/Te-no_103.jpg",
+      "sha256": "c95cc473f65c7aaa2c846463783fd14b0a0ef232b74bf6bc2e77a316b6bea61a",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.977984607219696
+    },
+    {
+      "source": "Testing/notumor/Te-no_104.jpg",
+      "sha256": "5686520a02cc01b823225b241c449c32086b9847f2cf1ef2febf81db8f6077c2",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9790557026863098
+    },
+    {
+      "source": "Testing/notumor/Te-no_105.jpg",
+      "sha256": "c74ecaa2c41bba17655dac6c942aab121527259616a6622b4fc62edd21e4ab7d",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9787852764129639
+    },
+    {
+      "source": "Testing/notumor/Te-no_106.jpg",
+      "sha256": "47d04966746d27a884a0a94ef820b3442199321d7cb2a385f2c9ed12f9ada160",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9793508052825928
+    },
+    {
+      "source": "Testing/notumor/Te-no_107.jpg",
+      "sha256": "846f56ed235636d20b2484d6bebef36869982ad90ab4b2e49ea99e554812d46e",
+      "expected": "No Tumor",
+      "predicted": "No Tumor",
+      "score": 0.9793811440467834
+    }
+  ],
+  "limitations": "固定的40张公开切片小规模复核，可能与训练数据重叠；不属于患者级独立测试、外部验证或临床准确率。额外20张在候选结果产生前预选。"
+}

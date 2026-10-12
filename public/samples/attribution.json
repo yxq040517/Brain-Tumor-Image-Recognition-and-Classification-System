@@ -1,0 +1,18 @@
+{
+  "dataset": "Brain Tumor MRI Dataset",
+  "creator": "Masoud Nickparvar",
+  "mirror_uploader": "BJyotibrat",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset",
+  "mirror_source": "https://huggingface.co/datasets/BJyotibrat/Masoud-Nickparvar-Brain-Tumor-MRI-Dataset",
+  "dataset_revision": "7fd75bb9f391c337eab8fab1ffdb5821e7223b23",
+  "changes": "Four original JPEG samples copied without image modification and renamed for local demonstration.",
+  "samples": {
+    "glioma.jpg": "Testing/glioma/Te-gl_1.jpg",
+    "meningioma.jpg": "Testing/meningioma/Te-aug-me_1.jpg",
+    "pituitary.jpg": "Testing/pituitary/Te-pi_1.jpg",
+    "notumor.jpg": "Testing/notumor/Te-no_1.jpg"
+  },
+  "limitations": "These examples demonstrate inference; they are not an independent clinical evaluation."
+}
